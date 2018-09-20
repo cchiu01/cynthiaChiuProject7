@@ -1,3 +1,53 @@
 .portfolio {
     background: $softBlack;
+    display: flex;
+    flex-direction: column;
+    .project {
+        color: white;
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        @media (max-width:660px) {
+            flex-direction: column;   
+        }
+    }
+    .project.reverse {
+        display:flex;
+        flex-direction: row-reverse;
+        text-align: right;
+        @media (max-width:660px) {
+            flex-direction: column;   
+        }
+    }
+    .image-container {
+        width: calc(40%);
+        @media (max-width:660px) {
+            width: calc(100%);   
+        }
+    }
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        width: calc(50% - 20px);
+        margin-left: 40px;
+        @media (max-width:660px) {
+            width: calc(100%);  
+            margin: 0;
+        }
+    }
+    .project-content.reverse {
+        margin-right: 40px;
+        @media (max-width:660px) {
+            margin: 0; 
+            text-align:left;
+        }
+    }
+    p {
+        margin: 10px 0;
+    }
+    .project-links {
+        margin: 10px 0;
+    }
+
 }
+
