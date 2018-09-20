@@ -1,0 +1,39 @@
+nav {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-self: flex-end;
+    position: absolute;
+    top: 50px;
+    @media (max-width:850px) {
+            display:none;
+            top:60px;
+        }
+    ul {
+        display: flex;
+        flex: 1 0 auto;
+        letter-spacing: 2px;
+    @media (max-width:850px) {
+            flex-direction: column;
+            text-align: right;
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+            
+            
+        }
+    }
+    li {
+        margin: 0 20px;
+        @media (max-width:900px) {
+            margin: 0 10px;
+        }
+        @media (max-width:850px) {
+            margin-right: 0;
+            padding: 10px 0;
+        }
+    }
+    li:last-child {
+        margin-right: 0;
+    }
+}
+

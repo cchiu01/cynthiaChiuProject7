@@ -1,0 +1,38 @@
+.toolbox {
+    background: lightgrey;
+    // @media (max-width:850px) {
+    //         padding-left: 0;
+    //         padding-right: 0;
+    //     }
+    .wrapper {
+        display:flex;        
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex: 1 0 auto;
+        width: 66%;
+        
+    }
+    .tool {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    i{
+        font-size: 5rem;
+        color: $softBlack;
+    }
+    img {
+        width: 50px;
+        height: 50px;
+        fill: $softBlack;
+    }
+    p {
+        text-transform: uppercase;
+        font-family: $heading;
+        font-weight: 600;
+        margin-top: 10px;
+        text-align: center;
+    }
+}

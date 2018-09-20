@@ -1,0 +1,17 @@
+.testimonials {
+    blockquote {
+        width: 50%;
+        margin: 20px 0;
+        text-align: center;
+        color: $softBlack;
+        
+    }
+    cite {
+        // align-self: flex-end;
+        display: block;
+        margin: 20px 0 0;
+    }  
+}
+
+
+

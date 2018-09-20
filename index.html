@@ -4,11 +4,179 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Satisfy|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="public/scripts/hamburgers-master/dist/hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="public/scripts/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="public/scripts/slick/slick-theme.css" />
     <link rel="stylesheet" href="public/styles/style.css">
-    <title>Document</title>
+    <title>Cynthia Chiu | Front End Web Developer</title>
 </head>
 <body>
-    <h1>Neat</h1>
+    <header id="home">
+        <div class="wrapper">
+            <button class="hamburger hamburger--slider" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#porfolio">portfolio</a></li>
+                    <li><a href="#toolbox">toolbox</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#testimonials">testimonials</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <h1>Cynthia Chiu</h1>
+            <h2>Front End Web Developer</h2>
+        </div>
+    </header>
+    
+    <section id="porfolio" class="portfolio">
+        <h3 class="text-white">portfolio</h3>
+        <div class="underline"></div>
+        <div class="project">
+            <div class="image-container">
+                <img src="" alt="">
+            </div>
+            <div class="project-content">
+                <h5 class="project-title"></h5>
+                <p class="project-tools"></p>
+                <p class="project-description"></p>
+            </div>
+        </div>
+
+    </section>
+    <section class="toolbox" id="toolbox">
+        <h3>toolbox</h3>
+        <div class="underline white-bg"></div>
+        <div class="wrapper">   
+            <div class="tool">
+                <i class="fab fa-html5"></i>
+                <p>html5</p>
+            </div>
+            <div class="tool">
+                <i class="fab fa-css3-alt"></i>
+                <p>css3</p>
+            </div>
+            <div class="tool">
+                <i class="devicon-sass-original"></i>
+                <p>sass</p>
+            </div>
+            <div class="tool">
+                <i class="fab fa-js"></i>
+                <p>javascript</p>
+            </div>
+            <div class="tool">
+                <i class="devicon-jquery-plain"></i>
+                <p>jquery</p>
+            </div>        
+            <div class="tool">
+                <i class="fab fa-react"></i>
+                <p>react</p>
+            </div>
+            <div class="tool">
+                <i class="devicon-c-plain"></i>
+                <p>C</p>
+            </div>
+            <div class="tool">
+                <i class="devicon-python-plain"></i>
+                <p>python</p>
+            </div>
+            <div class="tool">
+                <img src="./public/assets/sql.png" alt="sql logo">
+                <p>sql</p>
+            </div>
+            <div class="tool">
+                <img src="./public/assets/firebase.svg" alt="firebase logo">
+                <p>firebase</p>
+            </div>
+            <div class="tool">
+                <i class="devicon-github-plain"></i>
+                <p>github</p>
+            </div>
+            <div class="tool">
+                <i class="devicon-gulp-plain"></i>
+                <p>gulp</p>
+            </div>
+            
+            <div class="tool">
+                <i class="devicon-babel-plain"></i>
+                <p>babel</p>
+            </div>
+            <div class="tool">
+                <i class="fab fa-jenkins"></i>
+                <p>jenkins</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about">
+        <div class="wrapper">
+            <h3 class="text-white">about me</h3>
+            <div class="underline"></div>
+        </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+        <div class="wrapper">
+            <div class="container">
+                <blockquote>
+                    <h4>“ Cynthia is able to successfully complete multiple tasks with favourable results despite tight deadlies and has become a valuable member of the team. She displays excellent personal qualities and willingness to learn and take on new
+                    challenges. I am confident she could handle any position she strives for. ”</h4>
+                    <cite> Garth Olsen, Vice President at PureFacts Financial Solutions Inc</cite>
+                </blockquote>
+                <blockquote>
+                    <h4>“ I've known Cynthia since the beginning of her coding journey. As a student she has always been engaged, curious, and
+                    dedicated - consistently going above and beyond my expectations. Her attention to detail and capacity for learning
+                    quickly will make her excel as a developer. ”</h4>
+                    <cite> Kristen Spencer, Lead Instructor & Development Manager at HackerYou</cite>
+                </blockquote>
+                <blockquote>
+                    <h4>“ Cynthia has a high level of motivation and positive attitude. She has made a great contribution to the team as she quickly learned the massive knowledge base for our multi platform mission. Cynthia is young and adapts fast and yet, she demonstrates maturity and ownership of much value for small and intense teams. ”</h4>
+                    <cite> Pascal Fortier Poisson, PhD, Biosignal Scientist at OMsignal Inc</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h3>let's stay in touch</h3>
+        <div class="underline"></div>
+        <a href="mailto:hello@cynthiachiucodes.com">hello [at] cynthiachiucodes.com</a>
+        <ul class="socials">
+            <li><a href="https://twitter.com/cynthiachiu_"><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href=""><i class="fab fa-github"></i></a></li>
+        </ul>
+    </section>
+
+    <footer>
+        CYNTHIA CHIU © 2018
+    </footer>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="public/scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script>
+        $(function () {
+                $('a').smoothScroll();
+            });
+        $(document).ready(function () {
+            $('.container').slick({
+                dots: true,
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 10000,
+                speed: 1000,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
 </body>
 </html>

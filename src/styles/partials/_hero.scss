@@ -1,0 +1,43 @@
+header {
+    height: 100vh;
+    background-image: url(https://images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hamburger {
+        position: absolute;
+        top: 30px;
+        right: 10%;
+        display: none;
+        padding:0;
+        @media (max-width:850px) {
+            display: block;     
+        }
+    }
+    .activeMenu  {
+        display: block;
+    }
+    h1, h2 {
+        font-family: $heroHeading;
+        font-weight: 600;
+        
+    }
+    h1 {
+        font-size: 11rem;
+        @media (max-width:850px) {
+            font-size: 5rem;
+        }
+    }
+    h2 {
+        font-size: 8rem;
+        @media (max-width:850px) {
+            font-size: 5rem;
+        }
+    }
+}
+

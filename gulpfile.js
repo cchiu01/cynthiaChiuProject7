@@ -7,12 +7,17 @@ const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
 const notify = require('gulp-notify');
 const reload = browserSync.reload;
+const wait = require('gulp-wait');
 
 gulp.task('styles', () => {
     return gulp.src('./src/styles/**/*.scss')
-        .pipe(sass())
+        .pipe(wait(500))
+        .pipe(sass().on('error', sass.logError))
+        .pipe(wait(500))
         .pipe(concat('style.css'))
+        .pipe(wait(500))
         .pipe(gulp.dest('./public/styles/'))
+        .pipe(wait(500))
         .pipe(reload({stream:true}));
 });
 
