@@ -7,8 +7,10 @@
         display: flex;
         align-items: center;
         margin: 20px 0;
+        height: 70vh;
         @media (max-width:660px) {
             flex-direction: column;   
+            height: auto
         }
     }
     .project.reverse {
@@ -46,8 +48,18 @@
         margin: 10px 0;
     }
     .project-links {
-        margin: 10px 0;
+        margin: 20px 0;
+        a {
+            // border: 2px solid #f7ec91;
+            border: 2px solid #f47a16;
+            padding: 10px;
+            transition: all 300ms ease;
+        }
+        a:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
     }
+    
 
 }
 
